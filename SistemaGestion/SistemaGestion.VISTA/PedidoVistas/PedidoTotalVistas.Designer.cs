@@ -43,12 +43,15 @@
 			// 
 			// button3
 			// 
+			button3.BackColor = SystemColors.HotTrack;
+			button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button3.ForeColor = Color.White;
 			button3.Location = new Point(265, 207);
 			button3.Name = "button3";
 			button3.Size = new Size(116, 29);
 			button3.TabIndex = 58;
 			button3.Text = "SELECCIONAR";
-			button3.UseVisualStyleBackColor = true;
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// pictureBox1
@@ -95,12 +98,15 @@
 			// 
 			// button1
 			// 
+			button1.BackColor = SystemColors.HotTrack;
+			button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button1.ForeColor = Color.White;
 			button1.Location = new Point(45, 252);
 			button1.Name = "button1";
 			button1.Size = new Size(116, 29);
 			button1.TabIndex = 60;
 			button1.Text = "TOTAL";
-			button1.UseVisualStyleBackColor = true;
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// dataGridView2
@@ -141,6 +147,7 @@
 			Controls.Add(textBox1);
 			Controls.Add(label1);
 			Name = "PedidoTotalVistas";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "PedidoTotalVistas";
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

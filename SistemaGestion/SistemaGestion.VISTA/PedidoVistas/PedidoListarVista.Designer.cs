@@ -38,7 +38,11 @@
 			dataGridView1 = new DataGridView();
 			button1 = new Button();
 			button5 = new Button();
+			button6 = new Button();
+			pServicios = new Panel();
+			button7 = new Button();
 			((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+			pServicios.SuspendLayout();
 			SuspendLayout();
 			// 
 			// label2
@@ -161,11 +165,45 @@
 			button5.UseVisualStyleBackColor = false;
 			button5.Click += button5_Click;
 			// 
+			// button6
+			// 
+			button6.Image = (Image)resources.GetObject("button6.Image");
+			button6.Location = new Point(729, 12);
+			button6.Name = "button6";
+			button6.Size = new Size(60, 47);
+			button6.TabIndex = 41;
+			button6.UseVisualStyleBackColor = true;
+			button6.Click += button6_Click;
+			// 
+			// pServicios
+			// 
+			pServicios.BackColor = SystemColors.HotTrack;
+			pServicios.Controls.Add(button7);
+			pServicios.Location = new Point(631, 55);
+			pServicios.Name = "pServicios";
+			pServicios.Size = new Size(158, 60);
+			pServicios.TabIndex = 42;
+			pServicios.Visible = false;
+			// 
+			// button7
+			// 
+			button7.FlatAppearance.MouseOverBackColor = Color.Lime;
+			button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button7.Location = new Point(0, 15);
+			button7.Name = "button7";
+			button7.Size = new Size(158, 43);
+			button7.TabIndex = 7;
+			button7.Text = "Clientes";
+			button7.UseVisualStyleBackColor = true;
+			button7.Click += button7_Click;
+			// 
 			// PedidoListarVista
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(801, 526);
+			Controls.Add(pServicios);
+			Controls.Add(button6);
 			Controls.Add(button5);
 			Controls.Add(button1);
 			Controls.Add(label2);
@@ -176,9 +214,11 @@
 			Controls.Add(button2);
 			Controls.Add(dataGridView1);
 			Name = "PedidoListarVista";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "PedidoListarVista";
 			Load += PedidoListarVista_Load;
 			((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+			pServicios.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -194,5 +234,8 @@
 		private DataGridView dataGridView1;
 		private Button button1;
 		private Button button5;
+		private Button button6;
+		private Panel pServicios;
+		private Button button7;
 	}
 }

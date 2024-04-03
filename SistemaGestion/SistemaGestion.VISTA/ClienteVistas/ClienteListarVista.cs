@@ -71,5 +71,21 @@ namespace SistemaGestion.VISTA.ClienteVistas
 			PedidoVistas.PedidoEditarVista.IdClienteSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
 			PedidoVistas.PedidoTotalVistas.IdClienteSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
 		}
+
+		private void button5_Click(object sender, EventArgs e)
+		{
+			if (!pServicios.Visible)
+				pServicios.Visible = true;
+			else
+				pServicios.Visible = false;
+		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			PedidoListarVista detalleingForm = new PedidoListarVista();
+			detalleingForm.Show();
+			detalleingForm.FormClosing += frm_closing;
+		}
 	}
 }

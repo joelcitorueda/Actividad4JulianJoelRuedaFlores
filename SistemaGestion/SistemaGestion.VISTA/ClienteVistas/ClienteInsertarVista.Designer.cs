@@ -44,7 +44,7 @@
 			// pictureBox1
 			// 
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-			pictureBox1.Location = new Point(241, 35);
+			pictureBox1.Location = new Point(119, 62);
 			pictureBox1.Name = "pictureBox1";
 			pictureBox1.Size = new Size(129, 118);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -53,71 +53,78 @@
 			// 
 			// button2
 			// 
+			button2.BackColor = SystemColors.HotTrack;
 			button2.DialogResult = DialogResult.Cancel;
-			button2.Location = new Point(296, 465);
+			button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button2.ForeColor = Color.White;
+			button2.Location = new Point(194, 461);
 			button2.Name = "button2";
 			button2.Size = new Size(94, 29);
 			button2.TabIndex = 40;
 			button2.Text = "CANCELAR";
-			button2.UseVisualStyleBackColor = true;
+			button2.UseVisualStyleBackColor = false;
 			// 
 			// button1
 			// 
+			button1.BackColor = SystemColors.HotTrack;
 			button1.DialogResult = DialogResult.OK;
-			button1.Location = new Point(158, 465);
+			button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button1.ForeColor = Color.White;
+			button1.Location = new Point(77, 461);
 			button1.Name = "button1";
 			button1.Size = new Size(94, 29);
 			button1.TabIndex = 39;
 			button1.Text = "GUARDAR";
-			button1.UseVisualStyleBackColor = true;
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// textBox3
 			// 
-			textBox3.Location = new Point(97, 314);
+			textBox3.Location = new Point(63, 310);
 			textBox3.Name = "textBox3";
-			textBox3.Size = new Size(334, 27);
+			textBox3.Size = new Size(246, 27);
 			textBox3.TabIndex = 38;
 			textBox3.Text = "CORREO ELECTRONICO";
 			// 
 			// textBox2
 			// 
-			textBox2.Location = new Point(97, 266);
+			textBox2.Location = new Point(63, 262);
 			textBox2.Name = "textBox2";
-			textBox2.Size = new Size(334, 27);
+			textBox2.Size = new Size(246, 27);
 			textBox2.TabIndex = 37;
 			textBox2.Text = "APELLIDO";
 			// 
 			// textBox1
 			// 
-			textBox1.Location = new Point(97, 216);
+			textBox1.Location = new Point(63, 212);
 			textBox1.Name = "textBox1";
-			textBox1.Size = new Size(214, 27);
+			textBox1.Size = new Size(246, 27);
 			textBox1.TabIndex = 36;
 			textBox1.Text = "NOMBRE";
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Location = new Point(97, 167);
+			label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			label1.Location = new Point(99, 16);
 			label1.Name = "label1";
-			label1.Size = new Size(134, 20);
+			label1.Size = new Size(189, 28);
 			label1.TabIndex = 35;
 			label1.Text = "AGREGAR CLIENTE";
 			// 
 			// textBox4
 			// 
-			textBox4.Location = new Point(97, 363);
+			textBox4.Location = new Point(63, 359);
 			textBox4.Name = "textBox4";
-			textBox4.Size = new Size(334, 27);
+			textBox4.Size = new Size(246, 27);
 			textBox4.TabIndex = 43;
 			textBox4.Text = "TELEFONO";
 			// 
 			// textBox5
 			// 
-			textBox5.Location = new Point(97, 406);
+			textBox5.Location = new Point(63, 402);
 			textBox5.Name = "textBox5";
-			textBox5.Size = new Size(334, 27);
+			textBox5.Size = new Size(246, 27);
 			textBox5.TabIndex = 44;
 			textBox5.Text = "DIRECION";
 			// 
@@ -125,7 +132,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(684, 599);
+			ClientSize = new Size(369, 599);
 			Controls.Add(textBox5);
 			Controls.Add(textBox4);
 			Controls.Add(pictureBox1);
@@ -136,6 +143,7 @@
 			Controls.Add(textBox1);
 			Controls.Add(label1);
 			Name = "ClienteInsertarVista";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "ClienteInsertarVista";
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			ResumeLayout(false);

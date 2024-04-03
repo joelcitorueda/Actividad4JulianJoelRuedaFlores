@@ -59,23 +59,29 @@
 			// 
 			// button2
 			// 
+			button2.BackColor = SystemColors.HotTrack;
 			button2.DialogResult = DialogResult.Cancel;
+			button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button2.ForeColor = Color.White;
 			button2.Location = new Point(221, 407);
 			button2.Name = "button2";
 			button2.Size = new Size(94, 29);
 			button2.TabIndex = 59;
 			button2.Text = "CANCELAR";
-			button2.UseVisualStyleBackColor = true;
+			button2.UseVisualStyleBackColor = false;
 			// 
 			// button1
 			// 
+			button1.BackColor = SystemColors.HotTrack;
 			button1.DialogResult = DialogResult.OK;
+			button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button1.ForeColor = Color.White;
 			button1.Location = new Point(92, 407);
 			button1.Name = "button1";
 			button1.Size = new Size(94, 29);
 			button1.TabIndex = 58;
 			button1.Text = "GUARDAR";
-			button1.UseVisualStyleBackColor = true;
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// textBox3
@@ -105,20 +111,24 @@
 			// label1
 			// 
 			label1.AutoSize = true;
+			label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			label1.Location = new Point(42, 153);
 			label1.Name = "label1";
-			label1.Size = new Size(115, 20);
+			label1.Size = new Size(182, 31);
 			label1.TabIndex = 54;
 			label1.Text = "EDITAR PEDIDO";
 			// 
 			// button3
 			// 
+			button3.BackColor = SystemColors.HotTrack;
+			button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button3.ForeColor = Color.White;
 			button3.Location = new Point(262, 202);
 			button3.Name = "button3";
 			button3.Size = new Size(116, 29);
 			button3.TabIndex = 62;
 			button3.Text = "SELECCIONAR";
-			button3.UseVisualStyleBackColor = true;
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// PedidoEditarVista
@@ -136,6 +146,7 @@
 			Controls.Add(textBox1);
 			Controls.Add(label1);
 			Name = "PedidoEditarVista";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "PedidoEditarVista";
 			Load += PedidoEditarVista_Load;
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

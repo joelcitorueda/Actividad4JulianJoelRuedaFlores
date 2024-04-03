@@ -12,7 +12,9 @@ namespace SistemaGestion.DAL
 	{
 		public DataTable ListarPedidosDal()
 		{
-			string consulta = "SELECT * FROM PEDIDOS";
+			string consulta = "SELECT PEDIDOS.IDPEDIDO, (CLIENTE.NOMBRE+' '+ CLIENTE.APELLIDO) AS 'Nombre Cliente', PEDIDOS.FECHA, PEDIDOS.TOTAL, PEDIDOS.ESTADO\r\n" +
+				"FROM     CLIENTE INNER JOIN\r\n" +
+				"                  PEDIDOS ON CLIENTE.IDCLIENTE = PEDIDOS.IDCLIENTE";
 			DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
 			return lista;
 		}

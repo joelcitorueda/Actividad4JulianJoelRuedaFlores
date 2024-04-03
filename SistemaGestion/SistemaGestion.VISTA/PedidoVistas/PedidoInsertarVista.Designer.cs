@@ -52,23 +52,29 @@
 			// 
 			// button2
 			// 
+			button2.BackColor = SystemColors.HotTrack;
 			button2.DialogResult = DialogResult.Cancel;
+			button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button2.ForeColor = Color.White;
 			button2.Location = new Point(234, 398);
 			button2.Name = "button2";
 			button2.Size = new Size(94, 29);
 			button2.TabIndex = 50;
 			button2.Text = "CANCELAR";
-			button2.UseVisualStyleBackColor = true;
+			button2.UseVisualStyleBackColor = false;
 			// 
 			// button1
 			// 
+			button1.BackColor = SystemColors.HotTrack;
 			button1.DialogResult = DialogResult.OK;
+			button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button1.ForeColor = Color.White;
 			button1.Location = new Point(105, 398);
 			button1.Name = "button1";
 			button1.Size = new Size(94, 29);
 			button1.TabIndex = 49;
 			button1.Text = "GUARDAR";
-			button1.UseVisualStyleBackColor = true;
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// textBox3
@@ -98,9 +104,10 @@
 			// label1
 			// 
 			label1.AutoSize = true;
+			label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			label1.Location = new Point(55, 144);
 			label1.Name = "label1";
-			label1.Size = new Size(132, 20);
+			label1.Size = new Size(210, 31);
 			label1.TabIndex = 45;
 			label1.Text = "AGREGAR PEDIDO";
 			// 
@@ -113,12 +120,15 @@
 			// 
 			// button3
 			// 
+			button3.BackColor = SystemColors.HotTrack;
+			button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			button3.ForeColor = Color.White;
 			button3.Location = new Point(275, 193);
 			button3.Name = "button3";
 			button3.Size = new Size(116, 29);
 			button3.TabIndex = 54;
 			button3.Text = "SELECCIONAR";
-			button3.UseVisualStyleBackColor = true;
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// PedidoInsertarVista
@@ -136,6 +146,7 @@
 			Controls.Add(textBox1);
 			Controls.Add(label1);
 			Name = "PedidoInsertarVista";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "PedidoInsertarVista";
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			ResumeLayout(false);

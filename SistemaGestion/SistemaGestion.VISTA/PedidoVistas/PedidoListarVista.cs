@@ -74,5 +74,21 @@ namespace SistemaGestion.VISTA.PedidoVistas
 			}
 
 		}
+
+		private void button7_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			ClienteListarVista detalleingForm = new ClienteListarVista();
+			detalleingForm.Show();
+			detalleingForm.FormClosing += frm_closing;
+		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+			if (!pServicios.Visible)
+				pServicios.Visible = true;
+			else
+				pServicios.Visible = false;
+		}
 	}
 }
